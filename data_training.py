@@ -14,7 +14,7 @@ dictionary = {}
 c = 0
 
 for i in os.listdir():
-	if i.split(".")[-1] == "npy" and not(i.split(".")[0] == "labels"):  
+	if i.split(".")[-1] == "npy" and not(i.split(".")[0] == "labels"):
 		if not(is_init):
 			is_init = True 
 			X = np.load(i)
